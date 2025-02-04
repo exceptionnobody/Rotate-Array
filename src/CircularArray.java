@@ -7,7 +7,8 @@ public class CircularArray<T> implements Iterable<T> {
 
     @SuppressWarnings("unchecked")
     public CircularArray(int size) {
-        items = (T[]) new Object[size];
+        items = (T[]) new Object[size]; // we could declare items like a List<T> and
+                                        // in the constructor do: items = new ArrayList<>();
     }
 
     private int convert(int index) {
@@ -49,7 +50,7 @@ public class CircularArray<T> implements Iterable<T> {
         @Override
         public T next() {
             _current++;
-            return (T) items[convert(_current)];
+            return items[convert(_current)];
         }
 
         @Override

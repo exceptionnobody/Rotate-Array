@@ -3,7 +3,7 @@
 public class Main {
     public static void main(String[] args) {
         int size = 10;
-        CircularArray<String> array = new CircularArray<String>(size);
+        CircularArray<String> array = new CircularArray<>(size);
         for (int i = 0; i < size; i++) {
             array.set(i, String.valueOf(i));
         }
@@ -14,7 +14,7 @@ public class Main {
             System.out.println(array.get(i));
         }
 
-        System.out.println("");
+        System.out.println();
 
         array.rotate(2);
         for (String s : array) {
