@@ -11,14 +11,14 @@ public class Main {
         array.rotate(-3);
 
         for (int i = 0; i < size; i++) {
-            System.out.println(array.get(i));
+            System.out.print(array.get(i)+" ");
         }
 
         System.out.println();
 
-        array.rotate(2);
+        array.rotate(3);
         for (String s : array) {
-            System.out.println(s);
+            System.out.print(s+" ");
         }
     }
 

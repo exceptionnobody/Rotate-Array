@@ -44,11 +44,14 @@ public class CircularArray<T> implements Iterable<T> {
 
         @Override
         public boolean hasNext() {
+            System.out.println("hasNext");
             return _current < items.length - 1;
         }
 
         @Override
         public T next() {
+            System.out.println("next");
+
             _current++;
             return items[convert(_current)];
         }
